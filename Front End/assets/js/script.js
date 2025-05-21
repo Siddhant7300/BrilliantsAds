@@ -88,7 +88,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     console.log("Form data:", data);
 
     // Send the data to the backend using fetch
-    fetch("http://localhost:4000/contact", {
+    fetch("https://brilliantsads.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Set the request content type as JSON
