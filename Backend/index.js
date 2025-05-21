@@ -14,12 +14,12 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json({ limit: "10mb" }));
 app.use(cookieParser());
-// app.use(
-//   cors({
-//     credentials: true,
-//     origin: ['http://localhost:3000', 'http://localhost:3001'],
-//   })
-// ); 
+app.use(
+  cors({
+    credentials: true,
+    origin: ['https://www.brilliantsads.com/'],
+  })
+); 
 app.use(express.static(path.join(__dirname, "../Front End")));
 
 // MongoDB Connection
