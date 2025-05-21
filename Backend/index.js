@@ -17,7 +17,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: ['https://www.brilliantsads.com/'],
+    origin: ['*'],
   })
 ); 
 app.use(express.static(path.join(__dirname, "../Front End")));
