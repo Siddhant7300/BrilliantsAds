@@ -86,6 +86,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
       message: formData.get('message')
     };
     console.log("Form data:", data);
+    alert(data);
 
     // Send the data to the backend using fetch
     fetch("https://brilliantsads.onrender.com/contact", {
