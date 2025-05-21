@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="jigar sable, portfolio, jigar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Jigar's Portfolio. Full-Stack Web Developer and Android App Developer" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <title>Brilliant Advertising</title>
+    <style>
+      .our-services div:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+</head>
+<body oncontextmenu="return false">
+
+
+<!-- navbar starts -->
+<header>
+  <a href="/" class="logo"><i class="fab fa-node-js"></i> Brilliant Ads</a>
+
+  <div id="menu" class="fas fa-bars" onclick="toggleMenu()"></div>
+
+  <nav class="navbar">
+      <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#publisher">Publishers</a></li>
+          <li><a href="#advertiser">Advertiser</a></li>
+          <li><a href="#Technologies">Technologies</a></li> <!-- Fixed typo -->
+          <li><a href="#ourCompany">Our Company</a></li>
+          <li><a href="#ourservices">Our Services</a></li> <!-- Fixed class name -->
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+</header>
+
+<!-- Optional JavaScript to toggle the mobile menu -->
+<script>
+  function toggleMenu() {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
+  }
+</script>
+
+<!-- navbar ends -->
+
+
+<!-- Hero Section Starts -->
+<section class="home" id="home">
+  <!-- Particles.js Background -->
+  <div id="particles-js"></div>
+
+  <!-- Content Section -->
+  <div class="content">
+      <h2>Hi There,<br /> We are <span>Brilliant Ads</span></h2>
+      <p>Known for  <span class="typing-text"></span></p>
+
+      <!-- Learn More Button -->
+      <a href="#OurClients" class="btn">
+          <span>Learn More</span>
+          <i class="fas fa-arrow-circle-down"></i>
+      </a>
+
+      <!-- Social Media Links -->
+      <div class="socials">
+          <ul class="social-icons">
+              <li>
+                  <a class="linkedin" aria-label="LinkedIn" href="" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+              </li>
+              <li>
+                  <a class="github" aria-label="GitHub" href="" target="_blank">
+                      <i class="fab fa-github"></i>
+                  </a>
+              </li>
+              <li>
+                  <a class="twitter" aria-label="Twitter" href="" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+              </li>
+              <li>
+                  <a class="telegram" aria-label="Telegram" href="" target="_blank">
+                      <i class="fab fa-telegram-plane"></i>
+                  </a>
+              </li>
+              <li>
+                  <a class="instagram" aria-label="Instagram" href="" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+              </li>
+              <li>
+                  <a class="dev" aria-label="Dev" href="" target="_blank">
+                      <i class="fab fa-dev"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Image Section -->
+  <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/Brilliant Ads.jpg" alt="Brilliant Ads">
+  </div>
+</section>
+<!-- Home Section Ends -->
+
+<!-- Our Clients Section Starts -->
+<section class="OurClients" id="OurClients">
+  <h2 class="heading">
+      <i class="fas fa-user-alt"></i> Our <span>Clients</span>
+  </h2>
+
+  <!-- Row Container for Publishers and Advertisers -->
+  <div class="row" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 40px;">
+
+      <!-- Publisher Section -->
+      <div class="publisher" id="publisher" style="flex: 1; max-width: 100%; padding: 20px; box-sizing: border-box; text-align: center; margin-bottom: 20px;">
+          <div class="content">
+              <div class="box-container" style="display: flex; justify-content: center; align-items: center;">
+                  <img src="./assets/images/favicon.png" alt="Publisher Logo" style="width: 170px; height: 170px; margin-bottom: 20px;">
+              </div>
+              <h3 style="font-size: 2.1rem;">Publishers</h3>
+              <p style="font-size: 20px; line-height: 1.6; color: #555;">At Brilliant Ads , we prioritize exceptional standards and outstanding customer service. Our committed affiliate team is always available and ready to assist with any questions or support you may need. We offer some of the most lucrative and top-performing deals in the industry, including exclusive and in-house offers. We recognize the importance of consistent cash flow, which is why we ensure timely and hassle-free payments to our partners. <p>
+          </div>
+      </div>
+
+      <!-- Advertiser Section -->
+      <div class="advertiser" id="advertiser" style="flex: 1; max-width: 100%; padding: 20px; box-sizing: border-box; text-align: center;">
+          <div class="content">
+              <div class="box-container" style="display: flex; justify-content: center; align-items: center;">
+                  <img src="./assets/images/favicon.png" alt="Advertiser Logo" style="width: 170px; height: 170px; margin-bottom: 20px;">
+              </div>
+              <h3 style="font-size: 2.1rem;">Advertiser</h3>
+              <p style="font-size: 20px; line-height: 1.6; color: #555;">We spread advertising campaigns across various marketing platforms such as premium email, SEO, display ads, and social media. Our approach combines the strength of our internal email marketing team and our carefully chosen direct publishers. Together, we'll assess and refine the outcomes to ensure the best possible performance.</p>
+          </div>
+      </div>
+
+  </div>
+</section>
+<!-- Our Clients Section Ends -->
+
+
+
+
+
+
+<section class="Technologies"  id="Technologies" style="display: flex; flex-direction: column; align-items: center; width: 100%; padding: 50px 20px; background-color: #f4f4f4;flex-wrap: wrap;">
+  <!-- Heading centered at the top -->
+  <div class="container">
+    <div class="row">
+      <h1  class="bi bi-pc-display" style="font-size: 36px; font-weight: bold; color: rgb(115, 3, 167);; text-align: center; margin-bottom: 20px;">Technologies</h1>
+    </div>
+  </div>
+
+  <!-- Content below: Left side text and Right side image -->
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 30px;">
+    <!-- Left side: Description -->
+    <div style="flex: 1; text-align: left; padding-right: 40px;">
+      <p style="font-size: 16px; line-height: 1.8; color: #100a0a; max-width: 800px; text-align: justify; margin-left: 100px;">
+        Brilliant Ads is dedicated to the in-house development of highly effective technologies, primarily aimed at fostering strong connections and driving revenue between customers and advertisers. Brilliant Ads provides a range of customizable solutions designed to not only expand customer reach but also ensure that the interactions are as impactful as possible. By understanding the intricate dynamics of the digital advertising world, Brilliant Ads tailors its offerings to meet the unique needs of each client, allowing for scalable and measurable results.
+
+These solutions include Brilliant Ads' proprietary first-party data, advanced tracking, and quality assurance technologies, alongside innovative media distribution strategies. With access to real-time, actionable insights, businesses can adapt quickly to market changes, optimize campaigns, and improve customer experiences. The ability to track and analyze detailed consumer behavior patterns ensures that every interaction is relevant and timely, driving engagement and conversions.
+
+Brilliant Ads goes beyond just providing tools—it offers full-service support to advertisers and affiliates, enabling them to reduce risks and avoid costly errors. With cutting-edge tools for monitoring and adjusting ad performance, Brilliant Ads ensures that advertisers can maintain control over their campaigns while achieving better ROI. 
+
+
+      </p>
+    </div>
+    
+    <!-- Right side: Image -->
+    <div style="flex: 0; text-align: right;">
+      <img src="./assets/images/Technologies.jpg" alt="Technology Image" style="width: 400px; height: 400px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+    </div>
+  </div>
+</section>
+
+<section class="OurCompany" id="ourCompany" style="display: flex; flex-direction: column; align-items: center; width: 100%; padding: 50px 20px; background-color: #ffffff;">
+  <!-- Heading centered at the top -->
+  <div class="container">
+    <div class="row">
+      <h1 style="font-size: 36px; font-weight: bold; text-align: center;color: rgb(115, 3, 167);; margin-bottom: 20px;">Our Company</h1>
+    </div>
+  </div>
+
+  <!-- Content below: Image on the left and Description on the right -->
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 30px;">
+    
+    <!-- Left side: Image -->
+    <div style="flex: 0; text-align: left; padding-left: 20px;">
+      <img src="./assets/images/Our company.webp" alt="Company Image" style="width: 400px; height: 400px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+    </div>
+    
+    <!-- Right side: Description -->
+    <div style="flex: 1; text-align: left; padding-left: 40px; padding-right: 20px;margin-left: 150px;">
+      <p style="font-size: 16px; line-height: 1.8; color: #0f0808; max-width: 800px; text-align: justify;font-weight: 500;">
+        Brilliant Ads was founded in 2018 by two industry veterans who were pivotal in the growth and success of several leading online marketing companies. With years of expertise, we set out to challenge conventional business models and create something truly different. Our goal has always been to break the mold in how companies are structured and how they operate, focusing on what truly matters: delivering results for our clients.
+
+At Brilliant Ads, we’ve built a unique company culture where every member of our team is invested in the business’s success—and more importantly, in the success of our clients. From the leadership down to every department, our team works collaboratively and tirelessly to ensure not only our success but also the success of those we serve. Our commitment goes beyond the typical client-provider relationship; we are true partners who care deeply about the businesses we work with, treating them as our own.
+
+As we continue to grow and evolve, we remain steadfast in our commitment to our clients, whether they are small start-ups or large enterprises. At Brilliant Ads, we believe in the power of personalized service, and we continuously tailor our solutions to meet each client’s unique needs and challenges. 
+
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- experience section ends -->
+
+
+<section class="ourservices" id="ourservices" style="padding: 60px 20px; background-color: #f9f9f9; text-align: center;">
+  <!-- Heading -->
+  <h1 style="font-size: 36px; font-weight:bolder; color: rgba(10, 10, 10, 0.927); margin-bottom: 40px;">Our Services</h1>
+  <h5 style="font-size: 16px; color: #555; max-width: 80%; margin: 0 auto 40px; text-align: center;">
+    Our dedicated team represents some of the top leaders in the online marketing space. We offer cutting-edge marketing strategies that produce high-performing leads for our advertisers' campaigns. We provide online media services across all digital media channels. Our high level of client services and dedicated team enables us to provide superior results for campaigns.
+  </h5>
+
+  <!-- Services Grid -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 40px; justify-items: center; align-items: center;">
+    
+    <!-- Service Card 1 -->
+    <div style="background-color: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; text-align: center;">
+      <img src="./assets/images/display advertising.png" alt="Display Advertising" style="width: 80px; height: 80px; margin-bottom: 20px;">
+      <h3 style="font-size: 22px; font-weight: bold; color: #333; margin-bottom: 10px;">Display Advertising</h3>
+      <p style="font-size: 16px; color: #555; line-height: 1.6;">Drive brand awareness through high-impact visual ads that reach your target audience on various websites and platforms.</p>
+    </div>
+    
+    <!-- Service Card 2 -->
+    <div style="background-color: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; text-align: center;">
+      <img src="./assets/images/email marketing.jpg" alt="Email Marketing" style="width: 80px; height: 80px; margin-bottom: 20px;">
+      <h3 style="font-size: 22px; font-weight: bold; color: #333; margin-bottom: 10px;">Email Marketing</h3>
+      <p style="font-size: 16px; color: #555; line-height: 1.6;">Engage your customers with personalized, targeted email campaigns designed to convert leads into loyal customers.</p>
+    </div>
+
+    <!-- Service Card 3 -->
+    <div style="background-color: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; text-align: center;">
+      <img src="./assets/images/social media marketing.jpg" alt="Social Media" style="width: 80px; height: 80px; margin-bottom: 20px;">
+      <h3 style="font-size: 22px; font-weight: bold; color: #333; margin-bottom: 10px;">Social Media</h3>
+      <p style="font-size: 16px; color: #555; line-height: 1.6;">Harness the power of social media platforms to engage your audience and drive traffic with tailored campaigns.</p>
+    </div>
+
+    <!-- Service Card 4 -->
+    <div style="background-color: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; text-align: center;">
+      <img src="./assets/images/Ad marketing.webp" alt="AD" style="width: 80px; height: 80px; margin-bottom: 20px;">
+      <h3 style="font-size: 22px; font-weight: bold; color: #333; margin-bottom: 10px;">AD</h3>
+      <p style="font-size: 16px; color: #555; line-height: 1.6;">Get your business in front of the right audience with well-targeted online ads that drive immediate results.</p>
+    </div>
+
+    <!-- Service Card 5 -->
+    <div style="background-color: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; text-align: center;">
+      <img src="./assets/images/Native advertising.jpg" alt="Native Advertising" style="width: 80px; height: 80px; margin-bottom: 20px;">
+      <h3 style="font-size: 22px; font-weight: bold; color: #333; margin-bottom: 10px;">Native Advertising</h3>
+      <p style="font-size: 16px; color: #555; line-height: 1.6;">Seamlessly integrate ads into the user experience with native ads that blend with the content of the page.</p>
+    </div>
+
+    <!-- Service Card 6 -->
+    <div style="background-color: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; text-align: center;">
+      <img src="./assets/images/sms marketing.png" alt="SMS Marketing" style="width: 80px; height: 80px; margin-bottom: 20px;">
+      <h3 style="font-size: 22px; font-weight: bold; color: #333; margin-bottom: 10px;">SMS Marketing</h3>
+      <p style="font-size: 16px; color: #555; line-height: 1.6;">Reach your audience instantly with SMS campaigns that drive quick action and engagement.</p>
+    </div>
+
+    <!-- Service Card 7 -->
+    <div style="background-color: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; text-align: center;">
+      <img src="./assets/images/push notification marketting.png" alt="Push Notification Marketing" style="width: 80px; height: 80px; margin-bottom: 20px;">
+      <h3 style="font-size: 22px; font-weight: bold; color: #333; margin-bottom: 10px;">Push Notification Marketing</h3>
+      <p style="font-size: 16px; color: #555; line-height: 1.6;">Engage users with real-time notifications that keep your brand front and center on their devices.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" id="name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Brilliant Ads</h3>
+          <p>Thank you for visiting us. Connect with Us over socials. <br/> <br/> Keep Rising 🚀. Connect with us over live chat!</p>
+      </div>
+
+      <div class="box">
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#publisher"><i class="fas fa-chevron-circle-right"></i> Publisher</a>
+          <a href="#Advertiser"><i class="fas fa-chevron-circle-right"></i> Advertiser</a>
+          <a href="#Technologies"><i class="fas fa-chevron-circle-right"></i> Technologies</a>
+          <a href="#OurCompany"><i class="fas fa-chevron-circle-right"></i> Our Company</a>
+          <a href="#Our-Services"><i class="fas fa-chevron-circle-right"></i> Our Services</a>
+          <a href="#contact"><i class="fas fa-chevron-circle-right"></i> Contact</a>      
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+91 951951105</p>
+          <p> <i class="fas fa-envelope"></i> ajay@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>kanpur, India-208006</p>
+          <div class="share">
+
+              <a href="" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
