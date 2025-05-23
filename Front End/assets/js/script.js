@@ -68,6 +68,18 @@ var typed = new Typed(".typing-text", {
 });
 // <!-- typed js effect ends -->
 
+function showMessage(message, type) {
+  const popup = document.getElementById("popup-message");
+  popup.style.display = "block";
+  popup.textContent = message;
+  popup.style.color = type === "success" ? "green" : "red";
+
+  // Hide after 5 seconds
+  setTimeout(() => {
+    popup.style.display = "none";
+  }, 5000);
+}
+
 
 
 
@@ -86,7 +98,6 @@ document.getElementById("contact-form").addEventListener("submit", function(even
       message: formData.get('message')
     };
     console.log("Form data:", data);
-    alert(data.name);
 
     // Send the data to the backend using fetch
     fetch("https://brilliantsads.onrender.com/contact", {
@@ -100,7 +111,8 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     .then(data => {
       console.log("Success:", data);
       // Optionally show a success message to the user
-      alert("Message sent successfully!");
+      showMessage("Message sent successfully!", "success");
+
 
       // Reset the form after submission
       document.getElementById("contact-form").reset();  // Reset the form here
@@ -109,6 +121,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
       console.error("Error:", error);
 
       // Optionally show an error message to the user
-      alert("There was an error sending your message. Please try again.");
+      showMessage("There was an error sending your message. Please try again.", "error");
+
     });
 });
